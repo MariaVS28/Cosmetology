@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color:rgb(143, 137, 137);
+    background-color: #fff;
+}
+
+ *,
+ *:before, 
+ *:after {
+    box-sizing: border-box;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0;
+ }
+
+p {
+   margin: 0 0 10px;
+}
+
+/* container
+===============*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* header 
+================*/
+.header {
+    
+}
+
+.header__inner {
+    padding: 30px 0;
+    display: flex;
+}
+
+.header__lodo {
+    width: 18%;
+}
+
+.header__name {
+    margin-left: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 18%;
+    color: rgb(135, 94, 177);
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 64%;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header_address {
+    
+}
+
+.address__inner {
+    font-size: 18px;
+    font-weight: 600;
+    color: rosybrown;
+    text-transform: uppercase;
+}
+
+/* nav
+================*/
+.nav {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Bodoni Moda', sans-serif;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color:rgb(7, 26, 66);
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.5s linear;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+/* button
+================*/
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background 0.5s linear;
+}
+
+.btn--red {
+    background-color: tomato;
+}
+
+.btn--red:hover {
+    background-color: rgb(224, 41, 9);
+}
+
+
+/* social
+================*/
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+
+    background-color: #fff;
+    border: 1px solid #c6cacc;
+    transition: background 0.3s linear;
+}
+
+.social__item:hover {
+    background-color: #c6cacc;
+}
+
+.social__item:hover .social__icon {
+    fill: #dd1919;
+}
+
+.social__icon {
+    display: block;
+    height: 20px;
+
+    fill: #c6cacc;
+    transition: fill 0.3s linear;
+}
