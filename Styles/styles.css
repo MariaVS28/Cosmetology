@@ -87,6 +87,7 @@ p {
 ================*/
 .nav {
     display: flex;
+    justify-content: space-between;
     font-size: 18px;
     font-weight: 700;
     font-style: italic;
@@ -94,7 +95,6 @@ p {
 }
 
 .nav__link {
-    margin-left: 50px;
     color:rgb(7, 26, 66);
     text-decoration: none;
     opacity: 0.75;
@@ -181,14 +181,17 @@ p {
 
 .services__inner {
     display: flex;
+    justify-content: space-between;
+    
 }
 
 .services__links {
     margin-left: 120px;
+    width: 20%;
 }
 
 .services__links .nav__link {
-    margin: 20px 50px 0px 0px;
+    margin: 20px 40px 0px 0px;
     color: rgb(73, 3, 73);
 }
 
@@ -199,3 +202,53 @@ p {
     margin-left: 30px;
 }
 
+.services__item {
+    width: 80%;
+    overflow: hidden;
+}
+
+/* information
+================*/
+
+.information {
+    margin: 50px 0 0;
+}
+
+.information__maintitle {
+    font-weight: 800;
+    color: rgb(96, 113, 131);
+    font-style: italic;
+    font-family: 'Bodoni Moda', sans-serif;
+
+    margin: 0 0 40px;
+}
+
+.information__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information__item {
+    height: 310px;
+
+    width: 33.333333333%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0px 35px;
+}
+
+.information__title {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(51, 82, 82);
+    margin-bottom: 10px;
+}
+
+.information__text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-align:justify;
+}
