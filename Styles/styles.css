@@ -36,7 +36,7 @@ p {
 }
 
 .header__inner {
-    padding: 30px 0;
+    padding: 30px 0 20px;
     display: flex;
 }
 
@@ -175,3 +175,27 @@ p {
     fill: #c6cacc;
     transition: fill 0.3s linear;
 }
+
+/* services
+================*/
+
+.services__inner {
+    display: flex;
+}
+
+.services__links {
+    margin-left: 120px;
+}
+
+.services__links .nav__link {
+    margin: 20px 50px 0px 0px;
+    color: rgb(73, 3, 73);
+}
+
+.services__word {
+    font-size: 25px;
+    font-weight: 800;
+    color: wheat;
+    margin-left: 30px;
+}
+
