@@ -1,0 +1,121 @@
+/* specialists
+==========*/
+.specialist {
+    box-shadow: inset 1120px 0px 0px 0px #bedbcd
+}
+
+.specialist__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.specialist__photo {
+    margin: 40px 0;
+    width: 43%;
+}
+
+.photo {
+    border: 20px solid #ffffff;
+    box-shadow: 0px 70px 150px -6px rgb(0 0 0 / 20%);
+   
+    width: 396.33px;
+    height: 594px;
+}
+
+.specialist__information {
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 40%;
+}
+
+.spetialist__maintitle {
+    font-size: 30px;
+    font-weight: 550;
+    font-family: 'Cormorant Infant',Georgia;
+    color: rgb(49, 48, 48);
+    margin-bottom: 5px;
+}
+
+.specialist__title {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Cormorant Infant',Georgia;
+    color: rgb(49, 48, 48);
+    margin-bottom: 10px;
+}
+
+.specialist__text {
+    font-size: 20px;
+    font-weight: 500;
+    color:darkslategray;
+    margin-bottom: 8px;
+}
+
+@media (max-width:980px) {
+    .specialist__information{
+        width: 100%;
+        margin-top: 50px;
+        margin-right: 60px;
+        margin-bottom: 10px;
+    }
+
+    .specialist__photo {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:650px){
+    .specialist__information{
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+}
+@media (max-width:400px) {
+    .photo {
+        width: 318.716px;
+        height: 476.47px;
+    }
+
+    .specialist__information{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .spetialist__maintitle{
+        margin-bottom: 0;
+    }
+    .specialist__title {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:300px) {
+    .photo {
+        width: 277.2px;
+        height: 414.418px;
+    }
+
+    .specialist__information{
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .spetialist__maintitle{
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .specialist__title {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .specialist__text {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
