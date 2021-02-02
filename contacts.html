@@ -4,6 +4,7 @@
     <meta charset= "UTF-8">
     <title> косметология 21 века </title>
     <link rel="stylesheet" href="Styles/headerStyles.css">
+    <link rel="stylesheet" href="Styles/contactsStyles.css">
     <link rel="stylesheet" href="Styles/footerStyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,600&family=Open+Sans:ital,wght@0,400;0,600;1,600&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -18,13 +19,114 @@
           $("#footer").load("footer.html"); 
         });
     </script>
+
+    <!--map-->
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A59ca0bcecfcc460f95c4b89da7be26d545e7c9a766119f118f729c2e897621e3&amp;lang=en_FR&amp;scroll=true&id=map"></script>
+    <!--/.map-->
 </head>
 <body>
+<!--Sprite-->
+<svg style="display: none;">
+  <symbol id="location" viewBox="0 0 480 480">
+    <g>
+			<path d="M240,0C142.798,0,64,78.798,64,176c0,94.576,162.896,292.712,169.832,301.096c1.52,1.839,3.782,2.904,6.168,2.904
+				c2.386,0,4.648-1.065,6.168-2.904C253.104,468.712,416,270.576,416,176C416,78.798,337.202,0,240,0z M240,459.288
+				C209.896,421.712,80,254.976,80,176c0.101-88.324,71.677-159.899,160-160c88.324,0.101,159.899,71.676,160,160
+				C400,254.96,270.104,421.704,240,459.288z"/>
+			<path d="M348.88,145.664l-104-80c-2.877-2.214-6.883-2.214-9.76,0l-104,80c-3.499,2.697-4.149,7.721-1.452,11.22
+				c1.514,1.964,3.852,3.115,6.332,3.116h24v88c0,4.418,3.582,8,8,8h144c4.418,0,8-3.582,8-8v-88h24
+				c4.418-0.002,7.998-3.586,7.996-8.004C351.995,149.516,350.844,147.178,348.88,145.664z M256,240h-32v-48h32V240z M312,144
+				c-4.418,0-8,3.582-8,8v88h-32v-56c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v56h-32v-88c0-4.418-3.582-8-8-8h-8.48
+				L240,82.096L320.48,144H312z"/>
+		</g>
+  </symbol>
+  <symbol id="phone" viewBox="0 0 512.076 512.076">
+    <g>
+			<path d="M499.639,396.039l-103.646-69.12c-13.153-8.701-30.784-5.838-40.508,6.579l-30.191,38.818
+				c-3.88,5.116-10.933,6.6-16.546,3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453
+				l-3.149-5.743c-3.161-5.612-1.705-12.695,3.413-16.606l38.792-30.182c12.412-9.725,15.279-27.351,6.588-40.508l-69.12-103.646
+				C109.12,1.056,91.25-2.966,77.461,5.323L34.12,31.358C20.502,39.364,10.511,52.33,6.242,67.539
+				c-15.607,56.866-3.866,155.008,140.706,299.597c115.004,114.995,200.619,145.92,259.465,145.92
+				c13.543,0.058,27.033-1.704,40.107-5.239c15.212-4.264,28.18-14.256,36.181-27.878l26.061-43.315
+				C517.063,422.832,513.043,404.951,499.639,396.039z M494.058,427.868l-26.001,43.341c-5.745,9.832-15.072,17.061-26.027,20.173
+				c-52.497,14.413-144.213,2.475-283.008-136.32S8.29,124.559,22.703,72.054c3.116-10.968,10.354-20.307,20.198-26.061
+				l43.341-26.001c5.983-3.6,13.739-1.855,17.604,3.959l37.547,56.371l31.514,47.266c3.774,5.707,2.534,13.356-2.85,17.579
+				l-38.801,30.182c-11.808,9.029-15.18,25.366-7.91,38.332l3.081,5.598c10.906,20.002,24.465,44.885,73.967,94.379
+				c49.502,49.493,74.377,63.053,94.37,73.958l5.606,3.089c12.965,7.269,29.303,3.898,38.332-7.91l30.182-38.801
+				c4.224-5.381,11.87-6.62,17.579-2.85l103.637,69.12C495.918,414.126,497.663,421.886,494.058,427.868z"/>
+			<path d="M291.161,86.39c80.081,0.089,144.977,64.986,145.067,145.067c0,4.713,3.82,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+				c-0.099-89.503-72.63-162.035-162.133-162.133c-4.713,0-8.533,3.82-8.533,8.533S286.448,86.39,291.161,86.39z"/>
+			<path d="M291.161,137.59c51.816,0.061,93.806,42.051,93.867,93.867c0,4.713,3.821,8.533,8.533,8.533
+				c4.713,0,8.533-3.82,8.533-8.533c-0.071-61.238-49.696-110.863-110.933-110.933c-4.713,0-8.533,3.82-8.533,8.533
+				S286.448,137.59,291.161,137.59z"/>
+			<path d="M291.161,188.79c23.552,0.028,42.638,19.114,42.667,42.667c0,4.713,3.821,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+				c-0.038-32.974-26.759-59.696-59.733-59.733c-4.713,0-8.533,3.82-8.533,8.533S286.448,188.79,291.161,188.79z"/>
+		</g>
+  </symbol>
+  <symbol id="email" viewBox="0 0 512 512">
+    <g>
+      <path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106
+        C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z
+         M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787
+        L338.213,256L482,112.212V399.787z"/>
+    </g>
+  </symbol>
+</svg>
+<!--/.Sprite-->
 
 <!--header-->
 <div id="header"></div> 
 <!--header-->
-
+<div class="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+        <div class="contacts__blocks">
+          <div class="block">
+            <div class="contacts__img" href="#" target="_blank">
+              <svg class="contacts__svg">
+                <use xlink:href="#location"></use>
+              </svg>
+            </div>
+            <div class="additionalInformation">
+              <div class="additionalInformation__title">Адрес</div>
+              <div class="additionalInformation__text">г.Светлогорск, м-н Молодежный, д.59</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="contacts__img" href="#" target="_blank">
+              <svg class="contacts__svg">
+                <use xlink:href="#phone"></use>
+              </svg>
+            </div>
+            <div class="additionalInformation">
+              <div class="additionalInformation__title">Телефон</div>
+              <div class="additionalInformation__text">+375299535436</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="contacts__img" href="#" target="_blank">
+              <svg class="contacts__svg">
+                <use xlink:href="#email"></use>
+              </svg>
+            </div>
+            <div class="additionalInformation">
+              <div class="additionalInformation__title">Email</div>
+              <div class="additionalInformation__text">Lily.v220477@mail.ru</div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__blocks__map" >
+          <div id="map" class="contacts__map"></div>
+          <div class="contacts__information">
+            <div class="contacts__information__title">Как доехать?</div>
+            <div class="contacts__information__text">Автобусы: 12, 2, 11, 5, 15</div>
+            <div class="contacts__information__text">Маршрутки: 2, 5</div>
+            <div class="contacts__information__text">Остановка: "Балтика"</div>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
 <!--footer-->
 <div id="footer"></div>
 <!--/.footer-->
