@@ -1,0 +1,128 @@
+ li {
+    margin-bottom: 5px;
+}
+
+.container__peeling {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.peeling__maintitle {
+    font-size: 40px;
+    font-weight: 700;
+    color:darksalmon;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.peeling__item {
+    display: flex;
+    justify-content: center;
+    height: 358px;
+    width: 1121px;
+    margin-bottom: 20px;
+}
+
+.peeling__block {
+    margin-bottom: 15px;
+}
+.peeling__block__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: lightslategray;
+    margin-bottom: 15px;
+}
+
+.peeling__block__innertitle {
+    font-size: 19px;
+    font-weight: 600;
+    color:darkslategray;
+    margin-top: 5px;
+}
+.peeling__list {
+    color:rgb(75, 72, 72);
+    font-size: 16px;
+}
+
+.peeling__block__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(29, 28, 28);
+}
+
+@media (max-width: 1150px) {
+    .peeling__item {
+        height: 328px;
+        width: 1020px;
+    }
+}
+
+@media (max-width: 830px){
+    .peeling__item {
+        height: 244px;
+        width: 763px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .peeling__block__title {
+        font-size: 24px;
+    }
+    .peeling__block__innertitle {
+        font-size: 21px;
+    }
+    .peeling__list {
+        font-size: 19px;
+    }
+    .peeling__block__text {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 750px) {
+    .peeling__item {
+        height: 205px;
+        width: 640px;
+    }
+}
+
+@media (max-width: 630px) {
+    .peeling__item {
+        height: 179px;
+        width: 560px;
+    }
+}
+
+@media (max-width: 550px) {
+    .peeling__item {
+        height: 114px;
+        width: 358px;
+    }
+
+    .peeling__maintitle {
+        margin-left: 0;
+        text-align: center;
+        font-size: 35px;
+    }
+    .peeling__block__title {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .peeling__block__innertitle {
+        font-size: 19px;
+    }
+
+    .peeling__block__text {
+        font-size: 16px;
+    }
+    .peeling__list {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .peeling__item {
+        height: 89px;
+        width: 280px;
+    }
+}

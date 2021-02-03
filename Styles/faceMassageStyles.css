@@ -1,0 +1,103 @@
+li {
+    margin-bottom: 6px;
+}
+
+.faceMassage {
+    margin-bottom: 40px;
+}
+
+.faceMassage__maintitle {
+    font-size: 35px;
+    font-weight: 700;
+    color:darksalmon;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.faceMassage__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(27, 27, 27);
+}
+
+.faceMassage__span {
+    font-weight: 700;
+}
+
+.faceMassage__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.faceMassage__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: darkslategray;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.red {
+    color: rgb(201, 37, 37);
+}
+
+.massage {
+    font-size: 22px;
+    color:rgb(51, 11, 80);
+}
+
+.faceMassage__list {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+}
+@media (max-width: 780px) {
+    .faceMassage__maintitle {
+        font-size: 25px;
+    }
+}
+@media (max-width: 700px) {
+    .faceMassage__item {
+        height: 283px;
+        width: 566px;
+        margin: auto;
+    }
+    
+}
+@media (max-width: 450px) {
+    .faceMassage__item {
+        height: 170px;
+        width: 340px;
+    }
+    
+    .faceMassage__maintitle {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .faceMassage__item {
+        height: 132px;
+        width: 265px;
+    }
+    .faceMassage__maintitle {
+        font-size: 18px;
+    }
+
+    .faceMassage__title {
+        font-size: 16px;
+    }
+    .faceMassage__text {
+        font-size: 14px;
+    }
+    .faceMassage__list {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .massage {
+        font-size: 20px;
+    }
+}
