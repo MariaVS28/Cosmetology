@@ -42,6 +42,25 @@
             </g>
     </symbol>
 </svg> <!--/.Sprite-->
+<!--sign up-->
+<div id="popup__background" onclick="closeForm()"></div>
+<div class="form__popup" id="myForm">
+    <form action="#" class="form__container">
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+<!-- /.sign up-->
+
 <header class="header">
     <div class="container">
         <div class="header__inner">
@@ -87,7 +106,7 @@
                             </svg>
                         </a>
                     </div>
-                    <a class="btn btn--red" href="signUp.html">Записаться</a>
+                    <a class="btn btn--red" onclick="openForm()">Записаться</a>
                     <button class="burger" type="button">
                         <span class="burger__item">Menu</span>
                     </button>
