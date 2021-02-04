@@ -1,0 +1,105 @@
+li {
+    margin-bottom: 9px;
+}
+
+.hardwareMassage {
+    margin-bottom: 40px;
+}
+.hardwareMassage__maintitle {
+    font-size: 40px;
+    font-weight: 700;
+    color:darksalmon;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hardwareMassage__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: lightslategray;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.hardwareMassage__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(29, 28, 28);
+    margin-bottom: 6px;
+}
+.hardwareMassage__item {
+    display: flex;
+    margin: auto;
+    height: 424px;
+    width: 640px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hardwareMassage__innertitle {
+    font-size: 19px;
+    font-weight: 700;
+    color:darkslategray;
+}
+
+.hardwareMassage__list {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(29, 28, 28);
+    line-height: 1.4;
+}
+
+.hardwareMassage__text__border {
+    border-left: 6px double darkcyan;
+    padding: 15px;
+    color:darkred;
+    font-weight: 600;
+}
+
+@media (max-width: 830px) {
+    .hardwareMassage__item {
+        height: 354px;
+        width: 534px;
+    }
+    .hardwareMassage__maintitle {
+        margin-left: 0;
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .hardwareMassage__item {
+        height: 236px;
+        width:356px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hardwareMassage__item {
+        height: 212px;
+        width:320px;
+    }
+    .hardwareMassage__title {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .hardwareMassage__innertitle {
+        font-size: 17px;
+    }
+}
+@media (max-width: 350px) {
+    .hardwareMassage__item {
+        height: 177px;
+        width: 267px;
+    }
+
+    .hardwareMassage__maintitle {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+}

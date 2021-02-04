@@ -21,13 +21,9 @@ li {
     color: rgb(27, 27, 27);
 }
 
-.faceMassage__span {
-    font-weight: 700;
-}
-
 .faceMassage__item {
     display: flex;
-    justify-content: center;
+    margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -62,9 +58,14 @@ li {
     .faceMassage__item {
         height: 283px;
         width: 566px;
-        margin: auto;
     }
     
+}
+@media (max-width: 570px) {
+    .faceMassage__item {
+        height: 226px;
+        width: 453px;
+    }
 }
 @media (max-width: 450px) {
     .faceMassage__item {

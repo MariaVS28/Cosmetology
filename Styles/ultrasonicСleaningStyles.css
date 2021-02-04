@@ -22,10 +22,6 @@ li {
     color: rgb(27, 27, 27);
 }
 
-.span__text{
-    font-weight: 700;
-}
-
 .ultrasonicСleaning__inner__title {
     font-size: 18px;
     font-weight: 600;
@@ -36,7 +32,7 @@ li {
 
 .ultrasonicСleaning__item {
     display: flex;
-    justify-content: center;
+    margin: auto;
     margin-top: 10px;
 }
 
@@ -47,9 +43,8 @@ li {
 
 @media (max-width: 780px) {
     .ultrasonicСleaning__item {
-        margin: 10px auto 0;
-        height: 223px;
-        width: 431px;
+        height: 227px;
+        width: 590px;
     }
 
     .ultrasonicСleaning__maintitle {
@@ -60,21 +55,21 @@ li {
 }
 @media (max-width: 580px){
     .ultrasonicСleaning__item {
-        height: 178px;
-        width: 345px;
+        height: 176px;
+        width: 458px;
     }
 }
 
 @media (max-width: 450px) {
     .ultrasonicСleaning__item {
-        height: 127px;
-        width: 246px;
+        height: 139px;
+        width: 362px;
     }
 }
 
 @media (max-width: 350px) {
     .ultrasonicСleaning__item {
-        height: 106px;
-        width: 205px;
+        height: 107px;
+        width: 278px;
     }
 }

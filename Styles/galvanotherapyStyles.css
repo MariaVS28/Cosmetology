@@ -1,0 +1,105 @@
+li {
+    margin-bottom: 7px;
+}
+
+.galvanotherapy {
+    margin-bottom: 40px;
+}
+.galvanotherapy__maintitle {
+    font-size: 35px;
+    font-weight: 700;
+    color:darksalmon;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.galvanotherapy__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(29, 28, 28);
+    margin-bottom: 10px;
+}
+.galvanotherapy__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: lightslategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.galvanotherapy__innertitle {
+    font-size: 18px;
+    font-weight: 600;
+    color:darkslategray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.galvanotherapy__item {
+    display: flex;
+    margin: auto;
+    height: 464px;
+    width: 640px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.galvanotherapy__list {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(29, 28, 28);
+}
+
+.galvanotherapy__bigtext {
+    font-size: 19px;
+    font-weight: 600;
+    color: darksalmon;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    border-left: 6.5px double rgb(199, 40, 48);
+}
+
+@media (max-width: 850px) {
+    .galvanotherapy__item {
+        height: 387px;
+        width: 533px;
+    }
+    .galvanotherapy__maintitle {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+@media (max-width: 540px) {
+    .galvanotherapy__item {
+        height: 329px;
+        width: 453px;
+    }
+}
+
+@media (max-width: 450px) {
+    .galvanotherapy__item {
+        height: 232px;
+        width:320px;
+    }
+    .galvanotherapy__maintitle {
+        margin-bottom: 10px;
+    }
+    .galvanotherapy__innertitle {
+        font-size: 17px;
+    } 
+    .galvanotherapy__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .galvanotherapy__item {
+        height: 193px;
+        width: 266px;
+    }
+    .galvanotherapy__maintitle {
+        font-size: 30px;
+    }
+}
