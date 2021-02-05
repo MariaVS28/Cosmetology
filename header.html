@@ -43,25 +43,24 @@
     </symbol>
 </svg> <!--/.Sprite-->
 <!--sign up-->
-<div id="popup__background" onclick="closeForm()"></div>
+<div id="popup__background" onclick="closePopups()"></div>
 <div class="form__container" id="myForm">
     <div class="form__popup">
         <form action="#" class="form__item">
-          <h1>Login</h1>
+          <div class="popup__maintitle">Записаться</div>
+            <label for="fullName"><div class="popup__title">Имя и фамилия</div></label>
+            <input type="text" placeholder="Имя и фамилия" name="fullName" required>
       
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <button type="submit" class="btn">Login</button>
-          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            <label for="phone"><div class="popup__title">Контактный телефон</div></label>
+            <input type="tel" placeholder="+375(29)1849999" name="phone" required>
+
+            <label for="comment"><div class="popup__title">Ваш комментарий</div></label>
+            <textarea class="popup__textarea" type="text" placeholder="Например, желаемые дата и время" name="comment" unrequired></textarea> 
+            
+          <button type="submit" class="btn">Отправить</button>
         </form>
       </div>
 </div>
-
-
 <!-- /.sign up-->
 
 <header class="header">
@@ -88,7 +87,7 @@
                                 <use xlink:href="#facebook"></use>
                             </svg>
                         </a>
-                        <a class="social__item" href="#" target="_blank">
+                        <a class="social__item" href="https://www.instagram.com/cosmetolog_lily/" target="_blank">
                             <svg class="social__icon">
                                 <use xlink:href="#instagram"></use>
                             </svg>
@@ -109,7 +108,7 @@
                             </svg>
                         </a>
                     </div>
-                    <a class="btn btn--red" onclick="openForm()">Записаться</a>
+                    <a class="btn btn--red" onclick="openSignUp()">Записаться</a>
                     <button class="burger" type="button">
                         <span class="burger__item">Menu</span>
                     </button>

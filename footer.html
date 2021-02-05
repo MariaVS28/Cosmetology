@@ -5,6 +5,26 @@
         </g>
     </symbol>
 </svg>
+<!--sign up-->
+<div id="popup__background" onclick="closePopups()"></div>
+<div class="form__container" id="myForm2">
+    <div class="form__popup">
+        <form action="#" class="form__item">
+          <div class="popup__maintitle">Служба поддержки</div>
+            <label for="fullName"><div class="popup__title">Имя и фамилия</div></label>
+            <input type="text" placeholder="Имя и фамилия" name="fullName" required>
+      
+            <label for="phone"><div class="popup__title">Контактный телефон</div></label>
+            <input type="tel" placeholder="+375(29)1849999" name="phone" required>
+
+            <label for="comment"><div class="popup__title">Опишите вашу проблему</div></label>
+            <textarea class="popup__textarea" type="text" placeholder="" name="comment" unrequired></textarea> 
+            
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+</div>
+<!-- /.sign up-->
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
@@ -18,7 +38,7 @@
             </div>
             <div class="footer__block footer__links">
                 <h2 class="footer__innertitle">Дополнительные услуги</h2>
-                <a class="nav nav__link" href="#">Служба поддержки</a>
+                <a class="nav nav__link" href="#" onclick="openSupport()">Служба поддержки</a>
                 <a class="nav nav__link" href="frequentlyAskedQuestions.html">Часто задаваемые вопросы</a>
             </div>
             <div class="footer__block">
@@ -28,7 +48,7 @@
                             <use xlink:href="#facebook"></use>
                         </svg>
                     </a>
-                    <a class="social__item" href="#" target="_blank">
+                    <a class="social__item" href="https://www.instagram.com/cosmetolog_lily/" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#instagram"></use>
                         </svg>
