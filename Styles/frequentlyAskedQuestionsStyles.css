@@ -1,0 +1,48 @@
+li {
+    margin-bottom: 6px;
+}
+
+.frequentlyAskedQuestions {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.frequentlyAskedQuestions__block {
+    margin-bottom: 25px;
+}
+.frequentlyAskedQuestions__title {
+    font-size: 22px;
+    font-weight: 700;
+    color:rgb(22, 15, 65);
+    margin-bottom: 10px;
+}
+
+.frequentlyAskedQuestions__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(29, 28, 28);
+    margin-bottom: 6px;
+}
+
+.frequentlyAskedQuestions__border {
+    border-left: 7px double lightcoral;
+    padding-left: 20px;
+}
+
+.frequentlyAskedQuestions__list {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+}
+@media (max-width: 700px) {
+    .frequentlyAskedQuestions__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .frequentlyAskedQuestions__title {
+        font-size: 18px;
+    }
+}
