@@ -52,47 +52,47 @@ p {
 
 .remove {
     text-align: right;
-    cursor: pointer;
     padding-top: 3px;
     padding-right: 3px;
 }
 
 .remove__icon  {
-      height: 35px;
-      width: 35px;
-  }
-  /* The popup form - hidden by default */
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
 
-  .form__popup {
+.form__popup {
     position: relative;
     margin: 0 auto;
     width: fit-content;
     top: 25%;
     z-index: 1200;
     background-color: white;
-  }
-    .popup__maintitle {
+}
+
+.popup__maintitle {
     font-size: 30px;
     font-weight: 630;
     color: rgb(29, 28, 28);
     text-align: center;
     margin-bottom: 25px;
-  }
+}
 
-  .popup__title {
+.popup__title {
     font-size: 14px;
     font-weight: 530;
     color: rgb(29, 28, 28);
-  }
+}
  
-  /* Add styles to the form container */
-  .form__item {
+
+.form__item {
     max-width: 380px;
     padding: 0 25px 25px;
     background-color: white;
-  }
+}
 
-  .popup__textarea {
+.popup__textarea {
     width: 330px;
     background: #f4f4f8;
     border: none;
@@ -103,23 +103,23 @@ p {
     margin-bottom: 15px;
     border-color: #fff;
     margin-top: 7px;
-  }
-  /* Full-width input fields */
-  .form__item input[type=text], .form__item input[type=tel] {
+}
+
+.form__item input[type=text], .form__item input[type=tel] {
     width: 100%;
     padding: 15px;
     margin: 7px 0 22px 0;
     border: none;
     background: #f4f4f8;
-  }
-  /* When the inputs get focus, do something */
-  .form__item input[type=text]:focus, .form__item input[type=tel]:focus {
+}
+
+.form__item input[type=text]:focus, .form__item input[type=tel]:focus {
     background-color: #ddd;
     outline: none;
-  }
+}
   
-  /* Set a style for the submit/login button */
-  .form__item .btn {
+
+.form__item .btn {
     background: linear-gradient(to right, #564335, #804813, #564335, #804813);
     color: white;
     padding: 16px 20px;
@@ -128,17 +128,11 @@ p {
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  /*.form__item .cancel {
-    background-color: red;
-  }*/
-  
-  /* Add some hover effects to buttons */
-  .form__item .btn:hover, .open-button:hover {
+}
+
+.form__item .btn:hover, .open-button:hover {
     opacity: 1;
-  }
+}
 
 /* header 
 ================*/
