@@ -49,7 +49,18 @@ p {
     top: 0;
     position: absolute;
 }
-  
+
+.remove {
+    text-align: right;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-right: 3px;
+}
+
+.remove__icon  {
+      height: 35px;
+      width: 35px;
+  }
   /* The popup form - hidden by default */
 
   .form__popup {
@@ -58,6 +69,7 @@ p {
     width: fit-content;
     top: 25%;
     z-index: 1200;
+    background-color: white;
   }
     .popup__maintitle {
     font-size: 30px;
@@ -76,7 +88,7 @@ p {
   /* Add styles to the form container */
   .form__item {
     max-width: 380px;
-    padding: 25px;
+    padding: 0 25px 25px;
     background-color: white;
   }
 
@@ -100,9 +112,6 @@ p {
     border: none;
     background: #f4f4f8;
   }
-  .form__item input:last-child[type=text] {
-    padding-bottom: 30px;
-  }
   /* When the inputs get focus, do something */
   .form__item input[type=text]:focus, .form__item input[type=tel]:focus {
     background-color: #ddd;
@@ -111,7 +120,7 @@ p {
   
   /* Set a style for the submit/login button */
   .form__item .btn {
-    background-color:cadetblue;
+    background: linear-gradient(to right, #564335, #804813, #564335, #804813);
     color: white;
     padding: 16px 20px;
     border: none;
