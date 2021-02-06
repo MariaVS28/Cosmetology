@@ -1,4 +1,4 @@
-function openSignUp() {
+ function openSignUp() {
     document.getElementById("myForm").style.display = "block";
     document.getElementById("popup__background").style.display = "block";
   }
@@ -13,3 +13,9 @@ function closePopups() {
     document.getElementById("myForm2").style.display = "none";
     document.getElementById("popup__background").style.display = "none";
   }
+
+$(function() {
+
+  
+
+});
