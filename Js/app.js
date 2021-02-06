@@ -5,15 +5,19 @@ $(function() {
     document.getElementById("popup__background").style.display = "block";
   }
   
-function openSupport() {
+  function openSupport() {
     document.getElementById("supportForm").style.display = "block";
     document.getElementById("popup__background").style.display = "block";
   }
   
-function closePopups() {
+  function closePopups() {
     document.getElementById("signupForm").style.display = "none";
     document.getElementById("supportForm").style.display = "none";
     document.getElementById("popup__background").style.display = "none";
+  }
+
+  function showNav() {
+    $("#nav").toggleClass("show");
   }
 
   let popupBackground = $("#popup__background");
@@ -27,4 +31,7 @@ function closePopups() {
   popupBackground.on("click", closePopups);
   signupClose.on("click", closePopups);
   supportClose.on("click", closePopups);
+
+  let burger = $("#navToggle"); 
+  burger.on("click", showNav);
 });

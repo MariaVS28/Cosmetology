@@ -336,8 +336,23 @@ p {
     
     .header__menu .nav {
         display: none;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+
+        background-color:rgb(228, 213, 196);
+        z-index: 100;
+        top: 6%;
+        right: 0;
     }
 
+    .nav.show {
+        display: flex;
+    }
+    .header__menu .nav__link {
+        padding: 7px 15px;
+    }
     .header__menu .social {
         display: none;
    
