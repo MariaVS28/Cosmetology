@@ -1,4 +1,6 @@
- function openSignUp() {
+$(function() {
+
+  function openSignUp() {
     document.getElementById("signupForm").style.display = "block";
     document.getElementById("popup__background").style.display = "block";
   }
@@ -14,11 +16,15 @@ function closePopups() {
     document.getElementById("popup__background").style.display = "none";
   }
 
-$(function() {
-
   let popupBackground = $("#popup__background");
-  let signupForm = $("#signupForm");
-  let supportForm = $("#supportForm");
+  let signupBtn = $("#signupBtn");
+  let signupClose = $("#signupClose");
+  let supportBtn = $("#supportBtn");
+  let supportClose = $("#supportClose");
 
-  //popupBackground.on("click", closePopups);
+  signupBtn.on("click", openSignUp);
+  supportBtn.on("click", openSupport);
+  popupBackground.on("click", closePopups);
+  signupClose.on("click", closePopups);
+  supportClose.on("click", closePopups);
 });

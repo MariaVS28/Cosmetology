@@ -48,11 +48,11 @@
     </symbol>
 </svg> <!--/.Sprite-->
 <!--sign up-->
-<div id="popup__background" onclick="closePopups()"></div>
+<div id="popup__background"></div>
 <div class="form__container" id="signupForm">
     <div class="form__popup">
         <div class="remove">
-            <svg class="remove__icon" onclick="closePopups()">
+            <svg class="remove__icon" id="signupClose">
                 <use xlink:href="#remove"></use>
             </svg>
         </div>
@@ -114,7 +114,7 @@
                             </svg>
                         </a>
                     </div>
-                    <a class="btn btn--red" onclick="openSignUp()">Записаться</a>
+                    <a class="btn btn--red" id="signupBtn">Записаться</a>
                     <button class="burger" type="button">
                         <span class="burger__item">Menu</span>
                     </button>

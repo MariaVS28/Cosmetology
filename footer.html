@@ -6,11 +6,11 @@
     </symbol>
 </svg>
 <!--sign up-->
-<div id="popup__background" onclick="closePopups()"></div>
+<div id="popup__background"></div>
 <div class="form__container" id="supportForm">
     <div class="form__popup">
         <div class="remove">
-            <svg class="remove__icon" onclick="closePopups()">
+            <svg class="remove__icon" id="supportClose">
                 <use xlink:href="#remove"></use>
             </svg>
         </div>
@@ -44,7 +44,7 @@
             </div>
             <div class="footer__block footer__links">
                 <h2 class="footer__innertitle">Дополнительные услуги</h2>
-                <a class="nav nav__link" href="#" onclick="openSupport()">Служба поддержки</a>
+                <a class="nav nav__link" href="#" id="supportBtn">Служба поддержки</a>
                 <a class="nav nav__link" href="frequentlyAskedQuestions.html">Часто задаваемые вопросы</a>
             </div>
             <div class="footer__block">
