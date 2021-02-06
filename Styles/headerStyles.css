@@ -238,6 +238,10 @@ p {
     background-color: rgb(224, 41, 9);
 }
 
+.deviceVisibleBtn {
+    display: inline-block;
+}
+
 /* social
 ================*/
 
@@ -470,7 +474,7 @@ p {
 
     /* btn
     ===========*/
-    .btn {
+    .deviceVisibleBtn {
         display: none;
     }
 
