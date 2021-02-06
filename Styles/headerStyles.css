@@ -284,6 +284,7 @@ p {
     background: none;
     border: 0;
     cursor: pointer;
+    z-index: 300;
 }
 
 .burger__item {
@@ -363,7 +364,9 @@ p {
         display: none;
         position: absolute;
         flex-direction: column;
-        width: 100%;
+        justify-content: flex-start;
+        width: 40%;
+        height: 100%;
         text-align: right;
 
         background-color:rgb(228, 213, 196);
@@ -380,10 +383,6 @@ p {
 
     .header__menu .nav__link {
         padding: 7px 15px;
-    }
-
-    .btn__burgerSignup {
-        display: inline-block;
     }
 
     .header__menu .social {
@@ -474,6 +473,14 @@ p {
     .btn {
         display: none;
     }
+
+    .btn__burgerSignup {
+        display: inline-block;
+    }
+
+    .header__menu .nav {
+        width: 65%;
+    }
 }
 
 @media (max-width: 350px) {
@@ -487,6 +494,11 @@ p {
 
     .header__name {
         font-size: 13px;
+    }
+
+    .header__menu .nav {
+        width: 100%;
+        height: fit-content;
     }
 }
 
