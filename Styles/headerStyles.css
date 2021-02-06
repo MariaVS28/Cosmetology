@@ -320,6 +320,30 @@ p {
     bottom: -8px;
 }
 
+.btn__burgerSignup {
+    display: none;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 20px auto 0;
+
+    transition: background 0.5s linear;
+}
+
 @media (max-width:980px) {
     /* header
     ===========*/
@@ -353,9 +377,15 @@ p {
     .nav.show {
         display: flex;
     }
+
     .header__menu .nav__link {
         padding: 7px 15px;
     }
+
+    .btn__burgerSignup {
+        display: inline-block;
+    }
+
     .header__menu .social {
         display: none;
    

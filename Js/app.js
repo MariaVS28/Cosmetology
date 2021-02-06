@@ -16,22 +16,27 @@ $(function() {
     document.getElementById("popup__background").style.display = "none";
   }
 
-  function showNav() {
+  function toggleNav() {
     $("#nav").toggleClass("show");
   }
 
   let popupBackground = $("#popup__background");
   let signupBtn = $("#signupBtn");
+  let signupBurgerBtn = $("#signupBurgerBtn");
   let signupClose = $("#signupClose");
   let supportBtn = $("#supportBtn");
   let supportClose = $("#supportClose");
 
   signupBtn.on("click", openSignUp);
+  signupBurgerBtn.on("click", function(){
+    openSignUp();
+    toggleNav();
+  });
   supportBtn.on("click", openSupport);
   popupBackground.on("click", closePopups);
   signupClose.on("click", closePopups);
   supportClose.on("click", closePopups);
 
   let burger = $("#navToggle"); 
-  burger.on("click", showNav);
+  burger.on("click", toggleNav);
 });
