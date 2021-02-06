@@ -296,6 +296,7 @@ p {
 
     background-color: black;
     position: relative;
+    z-index: 300;
 }
 
 .burger__item:before,
@@ -308,7 +309,7 @@ p {
 
     position: absolute;
     left: 0;
-    z-index: 1;
+    z-index: 300;
 }
 
 .burger__item:before {
@@ -343,8 +344,10 @@ p {
 
         background-color:rgb(228, 213, 196);
         z-index: 100;
-        top: 6%;
+        top: 0;
         right: 0;
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 
     .nav.show {
