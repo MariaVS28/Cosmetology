@@ -26,6 +26,23 @@ $(function() {
     toggleScrollLock();
   }
 
+  function getNavWidthAndReset(){
+    let navWidth = $("#nav").css("width");
+    $("#nav").css("width", 0);
+    return navWidth;
+  }
+
+  function clearNavWidth() {
+    $("#nav").css("width", '');
+  }
+
+  function showBurgerNav(navWidth) {
+    let properties = {
+      width: navWidth
+    };
+    $(".nav.show").animate(properties, {duration: 1000});
+  }
+
   let popupBackground = $("#popup__background");
   let signupBtn = $("#signupBtn");
   let signupBurgerBtn = $("#signupBurgerBtn");
@@ -44,5 +61,10 @@ $(function() {
   supportClose.on("click", closePopups);
 
   let burger = $("#navToggle"); 
-  burger.on("click", toggleNav);
+  burger.on("click", function() {
+    let navWidth = getNavWidthAndReset();
+    toggleNav();
+    showBurgerNav(navWidth);
+    clearNavWidth();
+  });
 });
