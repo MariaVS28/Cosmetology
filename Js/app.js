@@ -16,8 +16,14 @@ $(function() {
     document.getElementById("popup__background").style.display = "none";
   }
 
+  function toggleScrollLock() {
+    $("html").toggleClass("scrollLock");
+    $("body").toggleClass("scrollLock");
+  }
+
   function toggleNav() {
     $("#nav").toggleClass("show");
+    toggleScrollLock();
   }
 
   let popupBackground = $("#popup__background");

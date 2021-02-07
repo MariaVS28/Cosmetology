@@ -21,6 +21,11 @@ p {
    margin: 0 0 10px;
 }
 
+.scrollLock {
+    height: 100%; 
+    overflow: hidden
+}
+
 /* container
 ===============*/
 .container {
