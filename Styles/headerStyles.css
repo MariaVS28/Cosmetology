@@ -393,7 +393,7 @@ p {
     .header__menu .nav__link {
         padding: 7px 15px;
         color: #fff;
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .header__menu .social {
@@ -498,7 +498,7 @@ p {
     }
 
     .header__menu .nav__link {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
