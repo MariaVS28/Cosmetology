@@ -67,4 +67,28 @@ $(function() {
     showBurgerNav(navWidth);
     clearNavWidth();
   });
+
+
+//slider
+  let beforeAndAfterSlider = $(".beforeAndAfter__photo__slider");
+  let indexSlider = $(".index__photo__slider");
+
+  beforeAndAfterSlider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+  });
+  
+  indexSlider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+  });
+  
 });

@@ -41,11 +41,54 @@
 }
 
 .beforeAndAfter__item {
-    
     height: 300px;
     width: 300px;
 }
 
+.beforeAndAfter__photo__slider {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    z-index: 2;
+}
+
+.slick-slide:focus {
+    outline: 0;
+}
+.slick-dots li {
+    margin: 0 5px;
+}
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    opacity: 0.5;
+    font-size: 0;
+    color: transparent;
+
+    cursor: pointer;
+}
+
+.slick-dots button:focus { 
+    outline: 0;
+}
+.slick-dots .slick-active button {
+    opacity: 1;
+}
 .beforeAndAfter__innertitle {
     font-size: 20px;
     margin-bottom: 12px;
@@ -79,7 +122,9 @@
         height: 250px;
         width: 250px;
     }
-
+    .beforeAndAfter__photo__slider {
+        height: 250px;
+    }
     .beforeAndAfter__maintitle {
         font-size: 18px;
     }
