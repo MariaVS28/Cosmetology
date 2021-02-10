@@ -91,4 +91,13 @@ $(function() {
     dots: true,
   });
   
+//zoom
+  let beforeAndAfterLensZoom = $(".beforeAndAfter__lensZoom");
+
+  beforeAndAfterLensZoom.ezPlus({
+    zoomType: 'lens',
+    lensShape: 'round',
+    lensSize: 200
+  });
+
 });
