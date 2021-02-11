@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,600&family=Open+Sans:ital,wght@0,400;0,600;1,600&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
     <script>
            window.jQuery || document.write('<script src="Js/jQuery/jquery-3.5.1.min.js"><\/script>');
@@ -26,46 +34,56 @@
 <div id="header"></div> 
 <!--header-->
 <div class="promotion">
-  <div class="promotion__container">
+  <div class="container">
     <div class="promotion__maintitle">Акции</div>
     <div class="promotion__inner">
         <div class="promotion__information">
-          <div class="promotion__information__item">
-            <div class="promotion__photo">
-              <img class="photo" src="img/birthday.jpg">
-            </div>
-            <div class="promotion__title">Дарим скидку 15 % в честь вашего дня рождения!</div>
-            <div class="promotion__text"><div class="text">Порадуйте себя полезным подарком в честь дня рождения!Не откладывайте заботу о себе на потом – приходите и подарите себе расслабление, удовольствие, красоту, молодость и здоровье. Для вас работают лучшие специалисты, которые помогут подобрать эффективную программу.</div>
-            <div class="text text__information">ПОДАРОК ДЕЙСТВУЕТ 3 дня до вашего дня рождения и 3 дня после (при себе необходимо иметь подтверждающий документ).</div> </div>
+          <div class="promotion__information__photoblock">
+            <span class="promotion__span">-15%</span>
+            <img class="photo" src="img/birthday.jpg">
           </div>
-        
+          
+          <div class="promotion__information__block">
+            <div class="promotion__title">Скидка в честь вашего дня рождения!</div>
+            <div>
+              <div class="promotion__text">Порадуйте себя полезным подарком в честь дня рождения! Не откладывайте заботу о себе на потом – приходите и подарите себе расслабление, удовольствие, красоту, молодость и здоровье. Для вас работают лучшие специалисты, которые помогут подобрать эффективную программу.</div>
+              <div class="text__information">ПОДАРОК ДЕЙСТВУЕТ 3 дня до вашего дня рождения и 3 дня после (при себе необходимо иметь подтверждающий документ).</div> 
+            </div> 
+          </div>
+           
         </div>
         <div class="promotion__information">
-          <div class="promotion__information__item">
-            <div class="promotion__photo">
-              <img class="photo" src="img/family.jpg">
-            </div>
-            <div class="promotion__title">Дарим скидку 10% на посещение всей семьей!</div>
-            <div class="promotion__text">Порадуйте себя и членов вашей семьи приятными процедурами. Скидка действует от 3 человек и выше. Скидка от общей суммы. Вы можете записаться всеми членами семьи втечении недели в удобное для вас время.</div>
+          <div>
+            <span class="promotion__span">-10%</span>
+            <img class="photo" src="img/family.jpg">
           </div>
+          <div class="promotion__information__block">
+            <div class="promotion__title">Скидка на посещение всей семьей!</div>
+            <div class="promotion__text">Порадуйте себя и членов вашей семьи приятными процедурами. Как воспользоваться этой скидкой? При записи сообщите администратору или оставте комментарий, что вы хотите воспользоваться этой скидкой. Скидка действует для каждого члена семьи. Вы можете записаться всеми членами семьи втечении недели в удобное для вас время.</div>
+            <div class="text__information">Скидка действует от 3 человек и выше.</div>
+            </div>
+          </div>
+          
+        <div class="promotion__information">
+          <div>
+            <span class="promotion__span">-30%</span>
+            <img class="photo" src="img/procedures.jpg">
+          </div> 
+          <div class="promotion__information__block">
+            <div class="promotion__title">Скидка на 5 посещение!</div>
+            <div class="promotion__text">Всем гостям мы даем специальную карточку посещений, которую далее, при каждом следующем посещении, заполняется. Таким образом, за каждый пятый визит дарим скидку в размере 30% от стоимости выбранной Вами услуги. Записывайтесь и приходите к нам чаще и дешевле!</div>
+              </div>  
         </div>
         <div class="promotion__information">
-          <div class="promotion__information__item">
-            <div class="promotion__photo">
-              <img class="photo" src="img/procedures.jpg">
-            </div>
-            <div class="promotion__title">Дарим скидку 30% на 5 посещение!</div>
-            <div class="promotion__text">Всем гостям мы будем давать специальную карточку посещений и дарить за каждый пятый визит скидку в размере 30%. Записывайтесь и приходите к нам чаще и дешевле!</div>
+          <div class="promotion__photo">
+            <span class="promotion__span">-10%</span>
+            <img class="photo" src="img/opening.jpg">
           </div>
-        </div>
-        <div class="promotion__information">
-          <div class="promotion__information__item">
-            <div class="promotion__photo">
-              <img class="photo" src="img/opening.jpg">
-            </div>
-            <div class="promotion__title">Дарим скидку 10% в честь нашего открытия!</div>
+          <div class="promotion__information__block">
+            <div class="promotion__title">Скидка в честь нашего открытия!</div>
             <div class="promotion__text">Вы у нас впервые? И думаете, что останетесь без скидки? Нет, и для вас у нас есть скидки. В честь нашего открытия действует скидка целых 2 недели в размере 10% на все услуги! Не упустите свой шанс! Записывайтесь и приходите к нам!</div>
-          </div>
+          </div>  
+            
         </div>
     </div>
   </div>
