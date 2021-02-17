@@ -198,7 +198,7 @@ p {
 }
 
 .nav__link {
-    color:rgb(7, 26, 66);
+    color: rgb(7, 26, 66);
     text-decoration: none;
     opacity: 0.75;
     transition: opacity 0.5s linear;

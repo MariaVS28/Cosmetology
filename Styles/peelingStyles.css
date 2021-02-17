@@ -1,7 +1,9 @@
  li {
     margin-bottom: 5px;
 }
-
+.peeling {
+    margin-bottom: 50px;
+}
 .container__peeling {
     max-width: 1000px;
     margin: 0 auto;
