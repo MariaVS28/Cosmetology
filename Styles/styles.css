@@ -128,15 +128,25 @@
     
 }
 
-@media (max-width:980px) {
-
-    /* services
-    ===========*/
+@media (max-width:1050px) {
     .services__item {
         width: auto;
         height: auto;
     }
 
+    .services__links {
+        width: 28%;
+    }
+    .services__photo {
+        width: 72%;
+    }
+
+}
+
+@media (max-width:980px) {
+
+    /* services
+    ===========*/
     .services__links {
         margin-left: 0;
         margin-right: 0;
