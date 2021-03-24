@@ -35,9 +35,49 @@ li {
     font-weight: 500;
     color: rgb(27, 27, 27);
 }
+@media (max-width: 1050px) {
+    .frequentlyAskedQuestions__title {
+        font-size: 24px;
+    }
+
+    .frequentlyAskedQuestions__text {
+        font-size: 21px;
+        font-weight: 500;
+        color: black;
+    }
+
+    .frequentlyAskedQuestions__list {
+        font-size: 21px;
+        font-weight: 500;
+        color:rgb(19, 29, 29);
+    }
+}
+@media (max-width: 780px) {
+    .frequentlyAskedQuestions__title {
+        font-size: 22px;
+    }
+
+    .frequentlyAskedQuestions__text {
+        font-size: 20px;
+    }
+    .frequentlyAskedQuestions__list {
+        font-size: 20px; 
+    }
+}
 @media (max-width: 700px) {
     .frequentlyAskedQuestions__title {
         font-size: 20px;
+    }
+
+    .frequentlyAskedQuestions__list {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(27, 27, 27);
+    }
+    .frequentlyAskedQuestions__text {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(27, 27, 27);
     }
 }
 

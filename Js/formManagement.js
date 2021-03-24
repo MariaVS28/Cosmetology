@@ -7,14 +7,14 @@ $(function() {
         for (var pair of formData.entries()) {
             console.log(pair[0]+ ', ' + pair[1]); 
         }
-/*
-        let response = await fetch('/article/formdata/post/user', {
+        
+        let response = await fetch('https://localhost:44336/api​/Actions​/signUp', {
           method: 'POST',
           body: new FormData(signupForm)
         });
     
         let result = await response.json();
-        */
+        
         
         await Promise.resolve().then(closePopups);
         //alert("Вы записаны");
