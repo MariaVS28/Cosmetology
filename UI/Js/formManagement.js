@@ -1,23 +1,41 @@
 $(function() {
 
+    function formDataAsJson(formData){
+      var object = {};
+      
+      formData.forEach((value, key) => object[key] = value);
+      return JSON.stringify(object);
+    }
+
     async function signup(e) {
         e.preventDefault();
         
-        let formData = new FormData(signupForm);
-        for (var pair of formData.entries()) {
-            console.log(pair[0]+ ', ' + pair[1]); 
-        }
-        
-        let response = await fetch('https://localhost:44336/api​/Actions​/signUp', {
+        let formJson = formDataAsJson(new FormData(signupForm));
+        let response = await fetch('https://localhost:44336/api/Actions/signUp', {
           method: 'POST',
-          body: new FormData(signupForm)
+          headers: {
+            "Content-type": "application/json"
+          },
+          body: formJson
         });
-    
-        let result = await response.json();
-        
-        
-        await Promise.resolve().then(closePopups);
-        //alert("Вы записаны");
+
+        console.log(response);
+        try {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          } 
+          else {
+            let result = await response.text();
+            console.log(result);
+            alert("Успех");
+          }
+        } catch (error) {
+          console.error(error);
+          alert("Ошибка");
+        }
+
+        //https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+        closePopups();
     }
 
     async function sendToSupport(e) {
